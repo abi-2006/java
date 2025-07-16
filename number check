@@ -1,0 +1,19 @@
+//to check number
+package lab;
+
+public class numbercheck {
+	public static void main(String [] args) {
+		int number=10;
+		if(number>0) {
+			System.out.println("possitive");
+		}
+		else if(number<0) {
+			System.out.println("negetive");
+		}
+		else {
+			System.out.println("zero");
+		}
+		
+	}
+
+}
