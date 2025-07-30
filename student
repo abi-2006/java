@@ -1,0 +1,33 @@
+package lab;
+import java.util.Scanner;
+class Student {
+	String name;
+	int rollnumber;
+	int m1,m2,m3;
+	float avg;
+	Student (int rollnumber,String name,int m1,int m2,int m3){
+	this.rollnumber = rollnumber;
+	this.name = name;
+	this.m1 = m1;
+	this.m2 = m2;
+	this.m3 = m3;
+}
+public void calculateAverage() {
+	avg = (m2+m2+m3)/3;
+}
+public void displayDetails() {
+	System.out.println("Roll number:"+ rollnumber);
+	System.out.println("name:"+ name);
+	System.out.println("mark1:"+ m1);
+	System.out.println("mark2:"+ m2);
+	System.out.println("mark3:"+ m3);
+	System.out.println("average:"+ avg);
+}
+}
+public class StudentDemo {
+ public static void main(String[] args) {
+	Student student = new Student(1,"demo",45,67,89);
+	student.calculateAverage();
+	student.displayDetails();
+ }
+}
