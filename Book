@@ -1,0 +1,33 @@
+package lab;
+import java.util.Scanner;
+class Book {
+	String BookTitle;
+	String AuthorName;
+	double price;
+	int quantity;
+	double Total;
+	Book (String BookTitle,String AuthorName,double price,int quantity){
+	this.BookTitle = BookTitle;
+	this.AuthorName = AuthorName;
+	this.price = price;
+	this.quantity = quantity;
+	
+}
+public void TotalPrice() {
+	Total = price * quantity;
+}
+public void displayDetails() {
+	System.out.println("BookTitle:"+ BookTitle);
+	System.out.println("AuthorName:"+ AuthorName);
+	System.out.println("price:"+ price);
+	System.out.println("Quantity:"+ quantity);
+	System.out.println("Total:"+ Total);
+}
+}
+public class BookDemo {
+ public static void main(String[] args) {
+	Book Book = new  Book("Rich Dad Poor Dad","Anand Bhatiya",150,2);
+	Book.TotalPrice();
+	Book.displayDetails();
+ }
+}
